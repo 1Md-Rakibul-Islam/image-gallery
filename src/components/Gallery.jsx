@@ -86,7 +86,7 @@ const Gallery = ({ images }) => {
         )}
       </div>
 
-      <div className=" grid grid-rows-3 grid-cols-5 gap-4 lg:p-8 md:p-7 sm:p-6 p-5">
+      <div className=" grid grid-cols-2 sm:grid-rows-3 sm:grid-cols-5 gap-4 lg:p-8 md:p-7 sm:p-6 p-5">
         {galleryImages?.map((image, index) => (
           <div
             key={index}
@@ -96,7 +96,7 @@ const Gallery = ({ images }) => {
             onMouseOver={() => handleHover(index)}
             draggable
             className={`${
-              index === 0 ? "row-span-2 col-span-2" : "col-span-1"
+              index === 0 ? "row-span-2 col-span-2" : "sm:col-span-1"
             } ${
               selectedImages?.includes(index) && "opacity-50"
             } hover:brightness-50 cursor-grab ease-in-out duration-500 rounded-lg border-2 border-gray-300 relative`}
@@ -116,7 +116,7 @@ const Gallery = ({ images }) => {
         <div className="w-full h-full col-span-1 cursor-pointer ease-in-out duration-500 rounded-lg border-2 border-gray-300 relative">
           <label
             htmlFor="file-upload"
-            className="w-full h-full flex flex-col items-center justify-center"
+            className="w-full h-full flex flex-col items-center justify-center cursor-pointer"
           >
             <input
               id="file-upload"
