@@ -1,0 +1,17 @@
+/* .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 10px;
+  max-width: 600px;
+}
+
+.gallery-item-wrapper {
+  cursor: grab;
+  transition: transform 2s ease; 
+}
+
+.gallery-item {
+  width: 100%;
+  height: auto;
+} 
+*/
