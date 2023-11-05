@@ -4,7 +4,7 @@ images;
 
 const App = () => {
   return (
-    <main className="flex items-center justify-center min-h-screen bg-slate-300">
+    <main className="flex items-center justify-center min-h-screen bg-slate-200">
       <Gallery images={images} />
     </main>
   );
